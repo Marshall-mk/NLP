@@ -1,0 +1,16 @@
+DATA SOURCES
+
+Client Data
+-SQL databases
+-Hadoop clusters
+-Cloud storage
+-Flat files
+
+Free source
+-Free APIs like Twitter
+-Wikipedia
+-Government data (e.g. http://data.gov)
+-Census data (e.g. http://www.census.gov/data.html)
+-Health care claim data (e.g. https://www.healthdata.gov/)
+
+Web scraping
