@@ -1,0 +1,24 @@
+STOP WORDS
+are very common words that carry no meaning or less meaning compared to other keywords. If we remove the words that are less commonly used, we can focus on the important keywords instead. Say, for example, in the context of a search engine, if your search query is “How to develop chatbot using python,” if the search engine tries to find web pages that contained the terms “how,” “to,” “develop,” “chatbot,” “using,” “python,” the search engine is going to find a lot more pages that contain the terms “how” and “to” than pages that contain information about developing chatbot because the terms “how” and “to” are so commonly used in the English language. So, if we remove such terms, the search engine can actually focus on retrieving pages that contain the keywords: “develop,” “chatbot,” “python” – which would more closely bring up pages that are of real interest. Similarly we can remove more common words and rare words as well.
+
+TEXT STANDARDIZATION
+Most of the text data is in the form of either customer reviews, blogs, or tweets, where there is a high chance of people using short words and abbreviations to represent the same meaning. This may help the downstream process to easily  understand and resolve the semantics of the 
+
+ CORRECTING SPELLING
+ Most of the text data is in the form of either customer reviews, blogs, or tweets, where there is a high chance of people using short words and making typo errors. This will help us in reducing multiple copies of words, which represents the same meaning. For example, “proccessing” and “processing” will be treated as different words even if they are used in the same sense.Note that abbreviations should be handled before this step, or else the corrector would fail at times. Say, for example, “ur” (actually means “your”) would be corrected to “or.”
+
+ Tokenizing Text
+ Tokenization refers to splitting text into minimal meaningful units. There is a sentence tokenizer and word tokenizer. There are many libraries to perform tokenization like NLTK, SpaCy, and TextBlob.
+
+ STEMMING
+ Stemming is a process of extracting a root word. For example, “fish,” “fishes,” and “fishing” are stemmed into fish.
+
+
+ Lemmatizing
+ Lemmatization is a process of extracting a root word by considering the vocabulary. For example, “good,” “better,” or “best” is lemmatized into good.The part of speech of a word is determined in lemmatization. It will return the dictionary form of a word, which must be a valid word while stemming just extracts the root word.•  Lemmatization handles matching “car” to “cars” along with matching “car” to “automobile.”
+ Stemming handles matching “car” to “cars.”
+Lemmatization can get better results.
+•  The stemmed form of leafs is leaf.
+•  The stemmed form of leaves is leav.
+•  The lemmatized form of leafs is leaf.
+•  The lemmatized form of leaves is leaf.
